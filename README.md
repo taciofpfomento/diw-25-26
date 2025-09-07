@@ -14,6 +14,7 @@ Este repositorio contiene materiales para el curso DIW-25-26, organizados en tem
             *   `ejercicio-5/` - Solución para el Ejercicio 5.
     *   `actividades/` - Contiene actividades para el Tema 1.
         *   `actividad-1/` - Materiales de la Actividad 1.
+        *   `actividad-2/` - Materiales de la Actividad 2.
 
 ## Resumen del Contenido
 

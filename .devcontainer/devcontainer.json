@@ -1,0 +1,20 @@
+{
+    "name": "PYTHON/HTML/CSS/JS Development",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "latest"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "azemoh.one-monokai",
+                "ms-vscode.livehtml",
+                "formulahendry.auto-rename-tag",
+                "glenn2223.live-sass",
+                "Syler.sass-indented"
+            ]
+        }
+    }
+}

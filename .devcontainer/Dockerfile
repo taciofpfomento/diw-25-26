@@ -1,5 +1,7 @@
-FROM mcr.microsoft.com/devcontainers/python:3.12:latest
+FROM mcr.microsoft.com/devcontainers/python:3
 
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive
+ENV PYTHONUNBUFFERED=True
+ENV UV_LINK_MODE=copy
 
-RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+RUN python -m pip install --upgrade pip \
+    && python -m pip install 'uv'

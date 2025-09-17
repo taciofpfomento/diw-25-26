@@ -1,20 +1,55 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.222.0/containers/python-3-miniconda
 {
-    "name": "PYTHON/HTML/CSS/JS Development",
-    "image": "mcr.microsoft.com/devcontainers/python:3.12",
-    "features": {
-        "ghcr.io/devcontainers/features/node:1": {
-            "version": "latest"
-        }
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "azemoh.one-monokai",
-                "ms-vscode.livehtml",
-                "formulahendry.auto-rename-tag",
-                "glenn2223.live-sass",
-                "Syler.sass-indented"
-            ]
-        }
-    }
+	"name": "Python Environment",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"features": {
+		"ghcr.io/dhoeric/features/hadolint:1": {},
+		"ghcr.io/devcontainers-extra/features/pnpm:2": {}
+},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+					"azemoh.one-monokai",
+					"ms-vscode.livehtml",
+					"formulahendry.auto-rename-tag",
+					"glenn2223.live-sass",
+					"Syler.sass-indented",
+					"GitHub.vscode-pull-request-github",
+					"editorconfig.editorconfig",
+					"ms-python.python",
+					"charliermarsh.ruff",
+					"kevinrose.vsc-python-indent",
+					"mosapride.zenkaku",
+					"njpwerner.autodocstring",
+					"oderwat.indent-rainbow",
+					"usernamehw.errorlens"
+			],
+			"settings": {
+				"python.terminal.activateEnvInCurrentTerminal": true,
+				"python.defaultInterpreterPath": ".venv/bin/python",
+				"[python]": {
+					"editor.defaultFormatter": "charliermarsh.ruff",
+					"editor.codeActionsOnSave": {
+						"source.fixAll.ruff": "explicit",
+						"source.organizeImports.ruff": "explicit"
+					},
+					"editor.formatOnSave": true
+				},
+				"files.insertFinalNewline": true,
+				"files.trimTrailingWhitespace": true,
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+						"path": "/bin/zsh"
+					}
+				}
+			}
+		}
+	},
+	"postCreateCommand": "uv sync",
+	"remoteUser": "root"
 }

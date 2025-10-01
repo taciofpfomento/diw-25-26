@@ -9,24 +9,23 @@
 	"features": {
 		"ghcr.io/dhoeric/features/hadolint:1": {},
 		"ghcr.io/devcontainers-extra/features/pnpm:2": {}
-},
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
-					"azemoh.one-monokai",
-					"ms-vscode.livehtml",
-					"formulahendry.auto-rename-tag",
-					"glenn2223.live-sass",
-					"Syler.sass-indented",
-					"GitHub.vscode-pull-request-github",
-					"editorconfig.editorconfig",
-					"ms-python.python",
-					"charliermarsh.ruff",
-					"kevinrose.vsc-python-indent",
-					"mosapride.zenkaku",
-					"njpwerner.autodocstring",
-					"oderwat.indent-rainbow",
-					"usernamehw.errorlens"
+				"azemoh.one-monokai",
+				"ms-vscode.live-server",
+				"formulahendry.auto-rename-tag",
+				"glenn2223.live-sass",
+				"Syler.sass-indented",
+				"oderwat.indent-rainbow",
+				"GitHub.vscode-pull-request-github",
+				"mosapride.zenkaku",
+				"ms-python.python",
+				"charliermarsh.ruff",
+				"kevinrose.vsc-python-indent",
+				"njpwerner.autodocstring",
+				"usernamehw.errorlens"
 			],
 			"settings": {
 				"python.terminal.activateEnvInCurrentTerminal": true,
@@ -36,9 +35,10 @@
 					"editor.codeActionsOnSave": {
 						"source.fixAll.ruff": "explicit",
 						"source.organizeImports.ruff": "explicit"
-					},
-					"editor.formatOnSave": true
+					}
 				},
+				"editor.wordWrap": "on",
+				"editor.formatOnSave": true,
 				"files.insertFinalNewline": true,
 				"files.trimTrailingWhitespace": true,
 				"terminal.integrated.defaultProfile.linux": "zsh",

@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  border: 0.2em solid black;
+  margin-bottom: 0.25em;
+  padding: 0.25em;
+}
+
+article {
+  padding: 50px;
+  position: relative;
+}
+
+
+article section:first-child li:nth-child(3) {
+  color: green;
+}
+
+body {
+  color: darkmagenta;
+  padding: 50px;
+}
+
+
+.sports {
+  position: absolute;
+  left: 1000px;
+}

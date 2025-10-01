@@ -6,7 +6,15 @@
 	"recommendations": [
 		"ms-vscode-remote.remote-containers",
 		"ms-azuretools.vscode-docker",
-		"RooVeterinaryInc.roo-cline"
+		"RooVeterinaryInc.roo-cline",
+		"azemoh.one-monokai",
+		"ms-vscode.livehtml",
+		"formulahendry.auto-rename-tag",
+		"glenn2223.live-sass",
+		"Syler.sass-indented",
+		"oderwat.indent-rainbow",
+		"GitHub.vscode-pull-request-github",
+		"mosapride.zenkaku",
 
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.

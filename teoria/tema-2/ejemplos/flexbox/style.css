@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  border: 10px solid red;
+  padding: 1vh 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item {
+  width: 125px;
+  border: 2px solid blue;
+}
+
+.item-1 {
+}
+
+.item-2 {
+}
+
+.item-3 {
+}

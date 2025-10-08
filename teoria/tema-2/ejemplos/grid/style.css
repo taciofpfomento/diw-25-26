@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  border: 10px solid red;
+  padding: 1vh 0;
+  display: grid;
+  grid-template-areas: 
+    "a a a"
+    "b b e"
+    "c d e";  
+}
+
+.item {
+  border: 3px solid black;
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}

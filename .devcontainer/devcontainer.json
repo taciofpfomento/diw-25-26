@@ -50,6 +50,6 @@
 			}
 		}
 	},
-	"postCreateCommand": "uv sync",
-	"remoteUser": "root"
+	"remoteUser": "root",
+	"postStartCommand": "chmod +x uv_activate.sh"
 }

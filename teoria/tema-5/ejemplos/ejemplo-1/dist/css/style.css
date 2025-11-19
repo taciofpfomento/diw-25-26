@@ -1,0 +1,37 @@
+@charset "UTF-8";
+code {
+  padding: 0.25em;
+  line-height: 0;
+}
+
+/* Este sí se incluirá, excepto en modo comprimido */
+/* Pueden contener interpolaciones:
+ * 1 + 1 = 4 */
+/*! Este comentario se incluirá en el CSS incluso en modo comprimido */
+p .sans {
+  font: Helvetica, sans-serif;
+}
+
+.foo {
+  background: orange;
+}
+.foo p {
+  color: blue;
+  font-size: 14px;
+  font-weight: bold;
+}
+.foo p span {
+  text-decoration: dashed;
+  font-size: calc(infinity);
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.foo p button {
+  background-color: lightsalmon;
+}
+.foo p button:hover {
+  opacity: 0.5;
+}
+.foo span:hover {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

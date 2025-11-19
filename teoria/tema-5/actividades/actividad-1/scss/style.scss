@@ -1,0 +1,71 @@
+@use '_foundations/variables' as vars;
+
+* {
+  line-height: normal;
+  padding: 1rem;
+
+  font: {
+    family: vars.$fonstack;
+    size: vars.$fontsize
+  }
+}
+
+#container {
+  max-width: 800px;
+
+  main {
+    h1 {
+      color: vars.$primary_dark;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style-position: inside;
+    }
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+
+    li {
+      flex: {
+        grow: 1;
+      }
+      
+      border: 0.25rem solid vars.$primary_dark;
+      background-color: vars.$primary;
+
+      color: vars.$primary_dark;
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      &:nth-child(2) {
+        border-left: none;
+        border-right: none;
+      }
+
+      &:hover {
+        transition: {
+          property: color background-color;
+          duration: 1s;
+        }
+
+        color: vars.$primary;
+        background-color: vars.$primary_dark;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  nav ul {
+    flex: {
+      direction: column;
+    };
+  }
+}

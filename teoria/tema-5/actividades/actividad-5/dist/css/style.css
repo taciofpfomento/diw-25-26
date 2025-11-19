@@ -79,37 +79,37 @@ p {
 }
 
 .border-primary {
-  border: 1px solid #006d78;
+  border: 1px solid rgb(0, 109.4736842105, 120);
   padding: 1rem;
   margin-bottom: 1rem;
 }
 .border-danger {
-  border: 1px solid #d3340f;
+  border: 1px solid rgb(211.4506437768, 52.3776824034, 14.5493562232);
   padding: 1rem;
   margin-bottom: 1rem;
 }
 .border-success {
-  border: 1px solid #6e8530;
+  border: 1px solid rgb(110.0043103448, 133.4094827586, 47.5905172414);
   padding: 1rem;
   margin-bottom: 1rem;
 }
 .border-info {
-  border: 1px solid #d69207;
+  border: 1px solid rgb(213.5714285714, 145.7857142857, 7.4285714286);
   padding: 1rem;
   margin-bottom: 1rem;
 }
 .border-black {
-  border: 1px solid black;
+  border: 1px solid hsl(0, 0%, -10%);
   padding: 1rem;
   margin-bottom: 1rem;
 }
 .border-gray {
-  border: 1px solid #8b8b8b;
+  border: 1px solid rgb(138.5, 138.5, 138.5);
   padding: 1rem;
   margin-bottom: 1rem;
 }
 .border-white {
-  border: 1px solid #e6e6e6;
+  border: 1px solid rgb(229.5, 229.5, 229.5);
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -154,6 +154,4 @@ p {
 }
 .border-radius-100 {
   border-radius: 1rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

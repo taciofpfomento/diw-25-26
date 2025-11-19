@@ -1,0 +1,55 @@
+@use 'foundation/vars';
+@use 'foundation/code';
+@use 'foundation/functions';
+
+$link-element: "span";
+
+// Este comentario no se incluirá en el CSS
+
+/* Este sí se incluirá, excepto en modo comprimido */
+
+/* Pueden contener interpolaciones:
+ * 1 + 1 = #{1 + 3} */
+
+/*! Este comentario se incluirá en el CSS incluso en modo comprimido */
+
+p
+
+/* Se pueden escribir comentarios multilínea en cualquier sitio
+   * Los espacios en blanco se permiten. */
+.sans {
+  font: Helvetica, // Igual con los comentarios de una sola línea
+    sans-serif;
+}
+
+.foo {
+  background: orange;
+
+  p {
+    color: blue;
+    font-size: 14px;
+    font-weight: bold;
+
+    span {
+      text-decoration: dashed;
+
+      font: {
+        size: functions.divide(10, 0);
+        family: sans-serif;
+        weight: bold;
+      }
+    }
+
+    button {
+      background-color: vars.$button-color;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  #{$link-element}:hover {
+    text-decoration: none;
+  }
+}

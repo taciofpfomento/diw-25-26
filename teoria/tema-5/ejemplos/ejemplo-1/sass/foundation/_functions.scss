@@ -1,0 +1,7 @@
+@function divide($num, $den) {
+  @if $den ==0 {
+    @debug "No se debe dividir entre 0";
+  }
+
+  @return $num/$den
+}
